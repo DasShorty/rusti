@@ -24,7 +24,7 @@ async fn main() {
         });
 
     println!("Starting the server...");
-    warp::serve(proxy).run(([127, 0, 0, 1], 3030)).await;
+    warp::serve(proxy).run(([0, 0, 0, 0], 3030)).await;
 
     println!("Server Stopped!");
 
